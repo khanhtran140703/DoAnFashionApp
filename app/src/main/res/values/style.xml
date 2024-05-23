@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- android:textColorPrimary: Màu chữ Tiêu đề  -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- actionMenuTextColor: Màu chữ Menu  -->
+        <item name="android:icon">@color/black</item>
+        <item name="android:backgroundTint">@color/white</item>
+
+        <item name="actionMenuTextColor">@android:color/holo_green_light</item>
+        <!-- Tints -->
+        <item name="colorAccent">#a13636</item>
+        <!-- Màu áp dụng cho các View ở trạng thái bình thường -->
+        <item name="colorControlNormal">@color/black</item>
+        <!-- Màu View đang hoạt động -->
+        <item name="colorControlActivated">#934848</item>
+        <!-- Highlight (i.e ripples or list selectors) -->
+        <item name="colorControlHighlight">#111</item>
+    </style>
+
+
+</resources>
