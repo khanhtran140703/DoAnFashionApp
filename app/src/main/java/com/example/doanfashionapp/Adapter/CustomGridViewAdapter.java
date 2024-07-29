@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.doanfashionapp.DTO.LoaiSanPham;
 import com.example.doanfashionapp.R;
+import com.makeramen.roundedimageview.RoundedImageView;
 
 import java.util.ArrayList;
 
@@ -69,7 +70,7 @@ public class CustomGridViewAdapter extends BaseAdapter {
         if (convertView==null){
             convertView=layoutInflater.inflate(R.layout.custom_gridview_layout,null);
             viewHolder=new ViewHolder();
-            viewHolder.imageLoaiSP=(ImageView)convertView.findViewById(R.id.imageLoaiSP);
+            viewHolder.roundedImageView=(RoundedImageView) convertView.findViewById(R.id.imageLoaiSP);
             viewHolder.txtTenLoaiSP=(TextView) convertView.findViewById(R.id.txtTenLoaiSP);
             convertView.setTag(viewHolder);
         }
@@ -78,15 +79,17 @@ public class CustomGridViewAdapter extends BaseAdapter {
         }
         LoaiSanPham loaiSP=arrayList.get(position);
         if (!loaiSP.getDsSP().isEmpty()){
-            viewHolder.imageLoaiSP.setImageResource(loaiSP.getDsSP().get(0).getIdAnhSanPham());
+            viewHolder.roundedImageView.setImageResource(loaiSP.getDsSP().get(0).getIdAnhSanPham());
             viewHolder.txtTenLoaiSP.setText(loaiSP.getTenLoaiSP());
         }
+
 
         return convertView;
     }
 
     static class ViewHolder {
-        ImageView imageLoaiSP;
         TextView txtTenLoaiSP;
+
+        RoundedImageView roundedImageView;
     }
 }

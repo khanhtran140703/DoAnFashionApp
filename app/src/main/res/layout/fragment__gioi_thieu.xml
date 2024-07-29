@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.Fragment_GioiThieu">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:text="Giới thiệu thành viên nhóm"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNhomTruong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Nhóm trưởng: Phạm Minh Nhật\nCông Việc: Làm CSDL, sản phẩm yêu thích, tìm kiếm sản phẩm"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvThanhVien1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Thành viên: Đặng Hoàng Phúc\nCông Việc: Trang chủ, trang admin"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tvThanhVien2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Thành viên: Nguyễn Tấn Phát\nCông Việc: Đăng nhập, đăng ký"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tvThanhVien3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Thành viên: Nguyễn Thảo Trâm\nCông Việc: Giỏ hàng, tổng tiền"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tvThanhVien4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Thành viên: Trần Chí Khanh\nCông Việc: Trang thông tin sản phẩm, thanh toán, danh sách đơn hàng admin"
+        android:textSize="16sp" />
+</LinearLayout>

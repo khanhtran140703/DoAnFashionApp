@@ -7,21 +7,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
 
-import com.example.doanfashionapp.Adapter.CustomGridViewAdapter;
-import com.example.doanfashionapp.DAO.DAO_LoaiSanPham;
-import com.example.doanfashionapp.DTO.LoaiSanPham;
 import com.example.doanfashionapp.R;
-
-import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Fragment_Routine#newInstance} factory method to
+ * Use the {@link Fragment_GioiThieu#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Fragment_Routine extends Fragment {
+public class Fragment_GioiThieu extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -32,10 +26,7 @@ public class Fragment_Routine extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private GridView gridView;
-    private CustomGridViewAdapter adapter;
-    private ArrayList<LoaiSanPham> arrayList=new ArrayList<>();
-    public Fragment_Routine() {
+    public Fragment_GioiThieu() {
         // Required empty public constructor
     }
 
@@ -45,11 +36,11 @@ public class Fragment_Routine extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Fragment_Routine.
+     * @return A new instance of fragment Fragment_GioiThieu.
      */
     // TODO: Rename and change types and number of parameters
-    public static Fragment_Routine newInstance(String param1, String param2) {
-        Fragment_Routine fragment = new Fragment_Routine();
+    public static Fragment_GioiThieu newInstance(String param1, String param2) {
+        Fragment_GioiThieu fragment = new Fragment_GioiThieu();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -70,12 +61,6 @@ public class Fragment_Routine extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment__routine, container, false);
-        gridView=(GridView) view.findViewById(R.id.gridView_Routine);
-        DAO_LoaiSanPham dao_loaiSanPham=new DAO_LoaiSanPham(getContext());
-        arrayList=dao_loaiSanPham.loadLoaiSP("Routine");
-        adapter=new CustomGridViewAdapter(arrayList,getContext());
-        gridView.setAdapter(adapter);
-        return view;
+        return inflater.inflate(R.layout.fragment__gioi_thieu, container, false);
     }
 }
